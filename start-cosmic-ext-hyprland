@@ -28,7 +28,7 @@ if [ -n "${SHELL}" ]; then
     fi
 fi
 
-export XDG_CURRENT_DESKTOP="${XDG_CURRENT_DESKTOP:=hyprland}"
+export XDG_CURRENT_DESKTOP="${XDG_CURRENT_DESKTOP:=Hyprland}"
 export XDG_SESSION_TYPE="${XDG_SESSION_TYPE:=wayland}"
 export XCURSOR_THEME="${XCURSOR_THEME:=Cosmic}"
 export _JAVA_AWT_WM_NONREPARENTING=1
@@ -44,7 +44,7 @@ if command -v systemctl >/dev/null; then
 fi
 # Run cosmic-session
 if [[ -z "${DBUS_SESSION_BUS_ADDRESS}" ]]; then
-    exec /usr/bin/dbus-run-session -- /usr/bin/cosmic-session hyprland
+    exec /usr/bin/dbus-run-session -- /usr/bin/cosmic-session Hyprland
 else
-    exec /usr/bin/cosmic-session hyprland
+    exec /usr/bin/cosmic-session Hyprland
 fi
