@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=COSMIC on hyprland
+Comment=This session logs you into the COSMIC desktop on hyprland
+Exec=/usr/bin/start-cosmic-ext-hyprland
+Type=Application
+DesktopNames=hyprland
